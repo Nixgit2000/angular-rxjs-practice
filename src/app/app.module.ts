@@ -1,16 +1,19 @@
 import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppComponent } from './app.component';
-import { ComponentA } from './component-a/component-a.component';
-import { ComponentB } from './component-b/component-b.component';
+import { ComponentAComponent } from './component-a/component-a.component';
+import { ComponentBComponent } from './component-b/component-b.component';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponentA,
-    ComponentB
+    ComponentAComponent,
+    ComponentBComponent
+
+
   ],
   imports: [
     BrowserModule,

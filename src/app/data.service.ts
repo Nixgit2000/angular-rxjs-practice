@@ -1,14 +1,15 @@
 import { Injectable } from '@angular/core';
-import { Observable, Subject } from 'rxjs';
-
+import { Subject, Observable } from 'rxjs';
 @Injectable({
-  providedIn: 'root',
+  providedIn: 'root'
 })
 export class DataService {
-  private data = new Subject<string>();
-  data$: Observable<string> = this.data.asObservable();
+  private data = new Subject<string>()
 
-  updateData(data: string) {
-    this.data.next(data);
+  data$: Observable<string> = this.data.asObservable()
+
+  updateData(data: string){
+    this.data.next(data)
   }
+
 }
